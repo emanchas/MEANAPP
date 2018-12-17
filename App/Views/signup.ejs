@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    <%=title %>
+  </title>
+</head>
+<body>
+  <% for(var i in messages) { %>
+    <div class="flash"><%= messages[i] %></div>
+  <% } %>
+  
+  <a href="/#!/">Home</a>
+  <h2>
+    Please enter the following information. Passwords must be at least 7 characters long.
+  </h2>
+  
+  <form action="/signup" method="post"><br>
+    <div>
+      <label>First Name:</label><br>
+      <input type="text" name="firstName" />
+    </div>
+    <div>
+      <label>Last Name:</label><br>
+      <input type="text" name="lastName" />
+    </div>
+    <div>
+      <label>Email:</label><br>
+      <input type="text" name="email" />
+    </div>
+    <div>
+      <label>Username:</label><br>
+      <input type="text" name="username" />
+    </div>
+    <div>
+      <label>Password:</label><br>
+      <input type="password" name="password" />
+    </div>
+    <div><br>
+      <input type="submit" value="Sign up" />
+	  <button type="reset" value="Reset">Reset</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Browse Books
+  </title>
+</head>
+  <body>
+    <a href="/#!/">Home</a>
+    <form>  
+        <h2>
+          Browse books by attribute
+        </h2>
+	
+      <!--ISBN's are maximum of 13 digits. Browser will warn if exceeded.-->
+      <div>
+        <label>ISBN:</label><br>
+        <input type="number" name="isbn" min="1" max="9999999999999" />
+      </div>
+      <div>
+        <label>Title:</label><br>
+        <input type="text" name="title" />
+      </div>
+      <div>
+        <label>Author:</label><br>
+        <input type="text" name="author" />
+      </div>
+      <div>
+        <label>Publisher:</label><br>
+        <input type="text" name="publisher" />
+      </div>
+      <div>
+        <label>Genre:</label><br>
+        <input type="text" name="genre" />
+      </div>
+      <div><br>
+        <input type="button" onclick="location.href='http://localhost:3000/browses';" value="Find Books"/>
+		<button type="reset" value="Reset">Reset</button>
+      </div>
+    </form> 		
+  </body>
+</html>
